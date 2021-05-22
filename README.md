@@ -2,7 +2,7 @@
 
 ## Team Members
 
-Place your team member names here.
+Mengzhi Qin, Fareed Mabrouk, Andrew Yu
 
 ### Contribution Statements
 
@@ -10,7 +10,7 @@ Add individual contribution statements here.
 
 ## Project Proposal Abstract
 
-This is the space for you to add a description for your project.
+During the COVID period one thing that popped into our eyes is the stock market, which experienced fluctuation last year and yields a interesting pattern. By this project we would like to introduce the basic knowledge about picking a stock to our audience, from an overview of the market to the analysis of different industry then comparison between our picks of companies. We want our audience after finishing the project could gain a sense of determine whether a stock is worth investing or not!
 
 ## Getting Started
 

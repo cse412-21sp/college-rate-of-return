@@ -1,0 +1,634 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20211.21.0420.1112                               -->
+<workbook original-version='18.1' source-build='2021.1.1 (20211.21.0420.1112)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='financials' inline='true' name='federated.0jdnaom1r8tcs8123lkz40u4w5vh' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='financials' name='textscan.1iqcly7109yjd31a5h09t18il7pd'>
+            <connection class='textscan' directory='C:/Users/MeetA/Desktop/UW/Git/CSE412_Final_Project/sp500-interest-analysis/data' filename='financials.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1iqcly7109yjd31a5h09t18il7pd' name='financials.csv' table='[financials#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Symbol' ordinal='0' />
+            <column datatype='string' name='Name' ordinal='1' />
+            <column datatype='string' name='Sector' ordinal='2' />
+            <column datatype='real' name='Price' ordinal='3' />
+            <column datatype='real' name='Price/Earnings' ordinal='4' />
+            <column datatype='real' name='Dividend Yield' ordinal='5' />
+            <column datatype='real' name='Earnings/Share' ordinal='6' />
+            <column datatype='real' name='52 Week Low' ordinal='7' />
+            <column datatype='real' name='52 Week High' ordinal='8' />
+            <column datatype='real' name='Market Cap' ordinal='9' />
+            <column datatype='real' name='EBITDA' ordinal='10' />
+            <column datatype='real' name='Price/Sales' ordinal='11' />
+            <column datatype='real' name='Price/Book' ordinal='12' />
+            <column datatype='string' name='SEC Filings' ordinal='13' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1iqcly7109yjd31a5h09t18il7pd' name='financials.csv' table='[financials#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Symbol' ordinal='0' />
+            <column datatype='string' name='Name' ordinal='1' />
+            <column datatype='string' name='Sector' ordinal='2' />
+            <column datatype='real' name='Price' ordinal='3' />
+            <column datatype='real' name='Price/Earnings' ordinal='4' />
+            <column datatype='real' name='Dividend Yield' ordinal='5' />
+            <column datatype='real' name='Earnings/Share' ordinal='6' />
+            <column datatype='real' name='52 Week Low' ordinal='7' />
+            <column datatype='real' name='52 Week High' ordinal='8' />
+            <column datatype='real' name='Market Cap' ordinal='9' />
+            <column datatype='real' name='EBITDA' ordinal='10' />
+            <column datatype='real' name='Price/Sales' ordinal='11' />
+            <column datatype='real' name='Price/Book' ordinal='12' />
+            <column datatype='string' name='SEC Filings' ordinal='13' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[financials.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Symbol</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Symbol]</local-name>
+            <parent-name>[financials.csv]</parent-name>
+            <remote-alias>Symbol</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[financials.csv_80F51498C2724DC5A082F7AC80321396]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Name]</local-name>
+            <parent-name>[financials.csv]</parent-name>
+            <remote-alias>Name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[financials.csv_80F51498C2724DC5A082F7AC80321396]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sector</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Sector]</local-name>
+            <parent-name>[financials.csv]</parent-name>
+            <remote-alias>Sector</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[financials.csv_80F51498C2724DC5A082F7AC80321396]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Price</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Price]</local-name>
+            <parent-name>[financials.csv]</parent-name>
+            <remote-alias>Price</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[financials.csv_80F51498C2724DC5A082F7AC80321396]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Price/Earnings</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Price/Earnings]</local-name>
+            <parent-name>[financials.csv]</parent-name>
+            <remote-alias>Price/Earnings</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[financials.csv_80F51498C2724DC5A082F7AC80321396]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Dividend Yield</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Dividend Yield]</local-name>
+            <parent-name>[financials.csv]</parent-name>
+            <remote-alias>Dividend Yield</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[financials.csv_80F51498C2724DC5A082F7AC80321396]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Earnings/Share</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Earnings/Share]</local-name>
+            <parent-name>[financials.csv]</parent-name>
+            <remote-alias>Earnings/Share</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[financials.csv_80F51498C2724DC5A082F7AC80321396]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>52 Week Low</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[52 Week Low]</local-name>
+            <parent-name>[financials.csv]</parent-name>
+            <remote-alias>52 Week Low</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[financials.csv_80F51498C2724DC5A082F7AC80321396]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>52 Week High</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[52 Week High]</local-name>
+            <parent-name>[financials.csv]</parent-name>
+            <remote-alias>52 Week High</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[financials.csv_80F51498C2724DC5A082F7AC80321396]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Market Cap</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Market Cap]</local-name>
+            <parent-name>[financials.csv]</parent-name>
+            <remote-alias>Market Cap</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[financials.csv_80F51498C2724DC5A082F7AC80321396]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EBITDA</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[EBITDA]</local-name>
+            <parent-name>[financials.csv]</parent-name>
+            <remote-alias>EBITDA</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[financials.csv_80F51498C2724DC5A082F7AC80321396]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Price/Sales</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Price/Sales]</local-name>
+            <parent-name>[financials.csv]</parent-name>
+            <remote-alias>Price/Sales</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[financials.csv_80F51498C2724DC5A082F7AC80321396]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Price/Book</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Price/Book]</local-name>
+            <parent-name>[financials.csv]</parent-name>
+            <remote-alias>Price/Book</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[financials.csv_80F51498C2724DC5A082F7AC80321396]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SEC Filings</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SEC Filings]</local-name>
+            <parent-name>[financials.csv]</parent-name>
+            <remote-alias>SEC Filings</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[financials.csv_80F51498C2724DC5A082F7AC80321396]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Ebitda' datatype='real' name='[EBITDA]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Sector]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='financials.csv' datatype='table' name='[__tableau_internal_object_id__].[financials.csv_80F51498C2724DC5A082F7AC80321396]' role='measure' type='quantitative' />
+      <column-instance column='[Sector]' derivation='None' name='[none:Sector:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Sector:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Real Estate&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Consumer Discretionary&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Health Care&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Telecommunication Services&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Industrials&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Consumer Staples&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Information Technology&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Utilities&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Materials&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Energy&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Financials&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='financials.csv' id='financials.csv_80F51498C2724DC5A082F7AC80321396'>
+            <properties context=''>
+              <relation connection='textscan.1iqcly7109yjd31a5h09t18il7pd' name='financials.csv' table='[financials#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Symbol' ordinal='0' />
+                  <column datatype='string' name='Name' ordinal='1' />
+                  <column datatype='string' name='Sector' ordinal='2' />
+                  <column datatype='real' name='Price' ordinal='3' />
+                  <column datatype='real' name='Price/Earnings' ordinal='4' />
+                  <column datatype='real' name='Dividend Yield' ordinal='5' />
+                  <column datatype='real' name='Earnings/Share' ordinal='6' />
+                  <column datatype='real' name='52 Week Low' ordinal='7' />
+                  <column datatype='real' name='52 Week High' ordinal='8' />
+                  <column datatype='real' name='Market Cap' ordinal='9' />
+                  <column datatype='real' name='EBITDA' ordinal='10' />
+                  <column datatype='real' name='Price/Sales' ordinal='11' />
+                  <column datatype='real' name='Price/Book' ordinal='12' />
+                  <column datatype='string' name='SEC Filings' ordinal='13' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='Sheet1 (topcompanies_financial_statment)' inline='true' name='federated.1nwnyki0cet8dh17tvvt51l869j5' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='topcompanies_financial_statment' name='excel-direct.0p93cqp1yn5kb10zwa66r0tvax5k'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/MeetA/Desktop/UW/Git/CSE412_Final_Project/sp500-interest-analysis/data/topcompanies_financial_statment.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0p93cqp1yn5kb10zwa66r0tvax5k' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A2:H27:no:A2:H27:0' header='yes' outcome='6'>
+            <column datatype='string' name='Name' ordinal='0' />
+            <column datatype='string' name='Season' ordinal='1' />
+            <column datatype='integer' name='Revenue (in million of USD)' ordinal='2' />
+            <column datatype='integer' name='Gross Profit (in million of USD)' ordinal='3' />
+            <column datatype='integer' name='Operating Expenses (in million of USD)' ordinal='4' />
+            <column datatype='integer' name='Operating Income (in million of USD)' ordinal='5' />
+            <column datatype='integer' name='Net Income (in million of USD)' ordinal='6' />
+            <column datatype='integer' name='Total Assets (in million of USD)' ordinal='7' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.0p93cqp1yn5kb10zwa66r0tvax5k' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A2:H27:no:A2:H27:0' header='yes' outcome='6'>
+            <column datatype='string' name='Name' ordinal='0' />
+            <column datatype='string' name='Season' ordinal='1' />
+            <column datatype='integer' name='Revenue (in million of USD)' ordinal='2' />
+            <column datatype='integer' name='Gross Profit (in million of USD)' ordinal='3' />
+            <column datatype='integer' name='Operating Expenses (in million of USD)' ordinal='4' />
+            <column datatype='integer' name='Operating Income (in million of USD)' ordinal='5' />
+            <column datatype='integer' name='Net Income (in million of USD)' ordinal='6' />
+            <column datatype='integer' name='Total Assets (in million of USD)' ordinal='7' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A2:H27:no:A2:H27:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Name]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Name</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_F24C44EB600E4955A0C23EFA7A150306]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Season</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Season]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Season</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_F24C44EB600E4955A0C23EFA7A150306]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Revenue (in million of USD)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Revenue (in million of USD)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Revenue (in million of USD)</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_F24C44EB600E4955A0C23EFA7A150306]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gross Profit (in million of USD)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Gross Profit (in million of USD)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Gross Profit (in million of USD)</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_F24C44EB600E4955A0C23EFA7A150306]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Operating Expenses (in million of USD)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Operating Expenses (in million of USD)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Operating Expenses (in million of USD)</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_F24C44EB600E4955A0C23EFA7A150306]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Operating Income (in million of USD)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Operating Income (in million of USD)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Operating Income (in million of USD)</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_F24C44EB600E4955A0C23EFA7A150306]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Net Income (in million of USD)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Net Income (in million of USD)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Net Income (in million of USD)</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_F24C44EB600E4955A0C23EFA7A150306]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Assets (in million of USD)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Assets (in million of USD)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Total Assets (in million of USD)</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_F24C44EB600E4955A0C23EFA7A150306]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_F24C44EB600E4955A0C23EFA7A150306]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Sheet1' id='Sheet1_F24C44EB600E4955A0C23EFA7A150306'>
+            <properties context=''>
+              <relation connection='excel-direct.0p93cqp1yn5kb10zwa66r0tvax5k' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A2:H27:no:A2:H27:0' header='yes' outcome='6'>
+                  <column datatype='string' name='Name' ordinal='0' />
+                  <column datatype='string' name='Season' ordinal='1' />
+                  <column datatype='integer' name='Revenue (in million of USD)' ordinal='2' />
+                  <column datatype='integer' name='Gross Profit (in million of USD)' ordinal='3' />
+                  <column datatype='integer' name='Operating Expenses (in million of USD)' ordinal='4' />
+                  <column datatype='integer' name='Operating Income (in million of USD)' ordinal='5' />
+                  <column datatype='integer' name='Net Income (in million of USD)' ordinal='6' />
+                  <column datatype='integer' name='Total Assets (in million of USD)' ordinal='7' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>&lt;Stock Price Example&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (topcompanies_financial_statment)' name='federated.1nwnyki0cet8dh17tvvt51l869j5' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1nwnyki0cet8dh17tvvt51l869j5'>
+            <column datatype='integer' name='[Gross Profit (in million of USD)]' role='measure' type='quantitative' />
+            <column-instance column='[Gross Profit (in million of USD)]' derivation='Sum' name='[sum:Gross Profit (in million of USD):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1nwnyki0cet8dh17tvvt51l869j5].[sum:Gross Profit (in million of USD):qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{5DF2EAB1-48AA-4B1D-85CE-74FC244CC3D0}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='51'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0jdnaom1r8tcs8123lkz40u4w5vh].[none:Name:nk]</field>
+            <field>[federated.0jdnaom1r8tcs8123lkz40u4w5vh].[none:Sector:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{187D8539-991D-4705-A226-541DC16DD68F}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='24' name='Sheet 1' width='64'>
+      iVBORw0KGgoAAAANSUhEUgAAAEAAAAAYCAYAAABKtPtEAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAEB0lEQVRYhe1WTUgyaxg918xEozQoWoRtWhW0SSW0f0JIF1HRyooiWkirFoWUtLMfiBbt
+      ahmIbQqkQlvYf0gQLaIIIo2CwqIsrZkctXnuIpjvi7rf3Rhz4XbgXcw885xznjM/7/xFRIT/
+      MSRiGxAbPwGIbUBs/AQgtgGx8ROA2AbExk8AYhsQGz8BiG1AbPwEILYBsZGWAFKpFFwuF5qa
+      mqDVamE0GjE9PY1EIgEAiMfjmJqagtFohF6vx8DAAO7u7oR+u90OrVYrrJ6enk8az8/PGBsb
+      EzhsNpvAwfM85ufn0dDQAL1ej87OToRCIaF3bm7uA7/ZbP6lT2kAwzC0uLhI4XCY3t7eKBqN
+      0sjICHk8HiIicrlcNDU1RQzDUCKRILfbTXa7nZLJJDEMQw6Hg25vb/+o4XQ6ye12Cxwul4vG
+      x8eJiGhnZ4cGBwcpEonQ29sb+f1+stlsFI1GiYhoYmKCjo+Pv+SVpuMJUCgUaG1tFY5zcnJQ
+      VVWFSCQCALi8vITFYoFCoQAAmM1mXF1dgeM4cByHjIwMKJXKP2oMDQ1BKv1lt66uDgsLCwCA
+      s7MzmEwmqNVqoXZwcIB4PI6srCy8vr4iPz//S960fwM4joPP58Pa2hoaGxsBAEajEUtLS2BZ
+      FslkEl6vF4WFhVAqlXh5eYFCofjXAH4fPpFIwOPxoLy8HABQVVUFr9eL+/t78DyPzc1NSKVS
+      5OXlIR6PQyaT/SN/2gOQSCTQaDSQyWS4ubkBALAs++EOyGQyhMNhpFIpaDQaDA0NAQCSySS2
+      trZgs9m+5D48PITD4cDT0xNsNpsQMMuyUKlUyMjIAPAe1sPDAziOQ25uLoaHh6FUKsHzPE5O
+      TtDX14fz8/PvCSAzMxOlpaWwWq3wer1gWRbb29tob2+HQqFAZmYmTCYTIpGI8Ir83ltbW4ui
+      oqJPvGdnZ9jY2IDD4UBBQcGHmtfrRXNzM9RqNSQSCWpqaiCXyxEMBj9cJ5FIUFZWBr1ej6ur
+      q/dz6Rg6FApheXlZGIhlWfj9fmRnZ0Mul0OlUmFlZQUcx4Hneezv7yMWi0Eul8PtdmNpaUmo
+      ra+v4/r6+pOGz+eDxWKBXC7/VCsuLsbq6ipisRh4nsfx8TEuLi6gUqmwu7uL2dnZD7VAIICS
+      kpL35nTsAo+PjzQ5OUn19fVUUVFBBoOBnE4nMQxDRETRaJRGR0epsrKSdDoddXV1UTAYJCKi
+      WCxGTqeTDAYD6XQ66ujooGAwSCzLUn9/P+3t7RHDMNTb20sVFRUfVnd3N728vBDHcTQzM0PV
+      1dWk0+mora2NAoEAERG9vr7S3Nyc4K2lpUWoERGlJYDvwOnpKY2OjhLHcd+q85/9Ezw6OoLV
+      aoVMJvtWnb8BDy3NChcehSMAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
