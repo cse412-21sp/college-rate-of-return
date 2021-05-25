@@ -37,38 +37,58 @@ This is a trendline telling the Open-Close and High-Low value of entire stock ma
 
 
 
-## Part 2: Insights into industries
+## Part 2: Insights into Sectors
 
-In this part we will focus more on the difference of indexes between different industries, use the dataset "financials.csv" to create visualizations and add explanations.
+In this part we will focus more on the difference of indexes between different sectors, use the dataset "financials.csv" to create visualizations and add explanations.
 
 We either explain the variables here or after every visualizations.
 
 
-### Dividend to EPS
+### Price by sector
 
-![example](./static/images/example1.png)
+When investing, the price of the stock is very important which decides how many shares you could buy and determine your return rates:
 
-Turn this static image into a VegaLite interactive visualization where audience could filter their own interest of industry.
+[TableauEmbed link:"https://public.tableau.com/views/financials-book/Sheet2?:language=en&:display_count=y&publish=yes&:origin=viz_share_link" width:"120%" height:"600"/]
 
-Explain the variables and give insights of typical patterns of the visualization.
+Under most situation, the increase and decrease rate (be careful, it is the rate here not the amount) of stocks with similar properties are very close, which means with same amount of money, we buy less expensive stocks but gain more money in return per share; where for cheap stocks we hold great amount of shares but the earnings per share is also small.
+
+And this is the reason why we need to read other indices of the stock to understand the market better.
 
 
-### Ebitda analysis
+### Market Cap, PS and PB
 
-![example](./static/images/example2.png)
+[TableauEmbed link:"https://public.tableau.com/views/financials-book/Sheet3?:language=en&:display_count=y&publish=yes&:origin=viz_share_link" width:"100%" height:"400"/]
 
 Also turn this into VegaLite visulization where audience could pick their favorite company and see the contribution of the company to the whole industry.
 
 Explain the variable Ebitda.
 
 
-### Price by sector
+### Dividend to EPS
 
-When investing, the price of the stock is also very important which decides how many shares you could buy and determine your return rates:
+Prior to understand the visualization of this part, we first need to learn the meanings of the variable. (Check the box once finish reading!)
 
-![example](./static/images/example3.png)
+[var name:"divYield" value:false /]
 
-Also add one interactive bar that audience could search/pick their favorite companies stock price (with its 52 weeks high and low).
+[Boolean value:divYield /]
+
+**Dividend Yields** [Display value:`divYield ? "get!" : "is a company's total annual dividend payments divided by its price per share, assuming the number of shares is constant. It is often expressed as a percentage. Dividend yield is used to calculate the earning on investment (shares) considering only the returns in the form of total dividends declared by the company during the year."  `/]
+
+[var name:"eps" value:false /]
+
+[Boolean value:eps /]
+
+**Earnings/Shares** [Display value:`eps ? "get!" : "Earnings per share (EPS) is calculated as a company's profit divided by the outstanding shares of its common stock. The resulting number serves as an indicator of a company's profitability."  `/]
+
+[Conditional if:`divYield && eps`]
+  [TableauEmbed link:"https://public.tableau.com/views/financials-book/Sheet1?:language=en&:display_count=y&:origin=viz_share_link" width:"120%" height:"600"/]
+
+  Both variables serve as important estimators of the companies profitability, and in most cases:
+
+  1. With fixed/similar Dividend Yield, company with higher EPS means more potential in growth of the stock price.
+
+  2. With fixed/similar EPS, company with higher Dividend Yields results in more stable income (Although not much!).
+[/Conditional]
 
 
 
