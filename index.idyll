@@ -10,7 +10,7 @@
   color:"#ffffff"
    /]
 
-Before everything, add a quotes here from Warren Buffet about his "value investing".
+# “It's far better to buy a wonderful company at a fair price, than a fair company at a wonderful price.” - Warren Buffet
 
 For this analysis we will focus on the COVID-period US stock market using indexes from SP500, which experienced moderate level of fluctuation due to various reasons. In the following context we will provide visualizations for
 aspects of the markets and give the audience a sense of how to choose a industry of interest and target several companies.
@@ -24,7 +24,15 @@ aspects of the markets and give the audience a sense of how to choose a industry
      [/Graphic]
 
      [Step]
-       Put the company map up here as the background, and introduction to the project and tells the basic knowledge audience required to understand the material.
+       As introduced in the beginning, *Warren Buffet* held a concept of what was called - ***Value Investing***.
+     [/Step]
+
+     [Step]
+       But what defines "Value"? What standard makes a company or its stock price "wonderful" or "fair"?
+     [/Step]
+
+     [Step]
+       And this is what we will step into in this project. To begin with, let's take a look at the market as a whole.
      [/Step]
 
    [/Scroller]
@@ -33,7 +41,11 @@ aspects of the markets and give the audience a sense of how to choose a industry
 
 ![example](./static/images/trendline.png)
 
+(Make this visualization embedded from Tableau and the Map also!!!)
+
 This is a trendline telling the Open-Close and High-Low value of entire stock market (SP500 focused).
+
+Since 2019, the pandemic has affected various industries of the human world especially the economy parts. Under most circumstances we expect the market value to have a consistent growth, but during this special period the growth would be limited and fluctuated as reflected from the visualization.
 
 
 
@@ -59,9 +71,13 @@ And this is the reason why we need to read other indices of the stock to underst
 
 [TableauEmbed link:"https://public.tableau.com/views/financials-book/Sheet3?:language=en&:display_count=y&publish=yes&:origin=viz_share_link" width:"100%" height:"400"/]
 
-Also turn this into VegaLite visulization where audience could pick their favorite company and see the contribution of the company to the whole industry.
+Usually, we would invest in companies that has considerable amount of Market Cap where those companies are less likely to go liquidation/bankrupt than ones having lower Market Capitalization.
 
-Explain the variable Ebitda.
+[TableauEmbed link:"https://public.tableau.com/views/financials-book/Sheet4?:language=en-US&:display_count=n&:origin=viz_share_link" width:"120%" height:"600"/]
+
+When reading the **Price/Book** ratio, which is a company’s price per share divided by its book value, we compare the ratio within same sectors and in most cases: 1. Lower ratio indicates a undervalue stock price; 2. Higher ratio indicates a overestimated stock price.
+
+And for the **Price/Sales** ratio, calculate as a company’s market cap divided by its total sales or revenue over the past year, we tend to invest those companies with lower ratio. If the P/S ratio is lower than comparable companies in the same industry that is profitable, investors might consider buying the stock due to the low valuation.
 
 
 ### Dividend to EPS
@@ -94,16 +110,27 @@ Prior to understand the visualization of this part, we first need to learn the m
 
 ## Part 3: Company's seasonal reports
 
-One of the documents to read prior to buying stocks will be the seasonal reports of the target company, where the balance sheet, income statement and their plans will be listed, we could then use them to estimate the profitablity of the company.
+One of the documents to read prior to buying stocks will be the seasonal reports of the target company, where the balance sheet, income statement and their plans will be listed, we could then use them to estimate the profitability of the company.
 
-We will pick 5-10 technology companies (Apple, Amazon, Tesla, NVIDIA, Airbnb, Uber, ...) to make a dataset, and compare their indexes within 1 year period!
+We picked 5 technology companies (Apple, Amazon, Netflix, Tesla, NVIDIA) to make a dataset, and compare their indexes within 1 year period! The reason we picked technology companies is that during COVID period, their operation are not likely to be negatively affected but possibly affected positively which follows our expectation to the stock market (economy) without the COVID - should be increasing overtime.
 
-Data cleaning still in progress!!! Use "topcompanies_financial_statement.csv".
+
+## Income Overview
+
+First of all let's take a look at the Revenue of each company during 2020 March to 2021 March.
+
+[TableauEmbed link:"https://public.tableau.com/views/financials-book/Sheet6?:language=en-US&:display_count=n&:origin=viz_share_link" width:"100%" height:"600"/]
+
+We observed that every company has an increasing trend during the year of 2020 which met our expectation, no matter rapidly or slowly. The difference in slopes are determined by various variables which cannot be reflected simply by reading its revenue. So lets take out the cost of producing the merchandizes and taxes and look at the net income of each companies again.
+
+[TableauEmbed link:"https://public.tableau.com/views/financials-book/Sheet7?:language=en-US&:display_count=n&:origin=viz_share_link" width:"100%" height:"600"/]
+
+Where now we can see that the spike of Amazon during 2020 season 3 is no more obvious, however the spike for apple still exist.
 
 
 ### Net Income to Total Assets
 
-When looking at the value of a company, the profitablity and its assets are good measurements for its potential.
+When looking at the value of a company, the profitability and its assets are good measurements for its potential.
 
 Visualization here!
 
