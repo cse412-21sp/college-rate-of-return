@@ -2,8 +2,8 @@
 
 [Header
   fullWidth:true
-  title:"CSE412 Final Project - US Stock Market Analysis"
-  subtitle:"How do we profit from investment into stock markets?"
+  title:"Investing 101 - US Stock Market Analysis"
+  subtitle:"What to know prior to entering the stock market?"
   author:"Mengzhi Qin, Fareed Mabrouk, Andrew Yu"
   date:"Apr 6, 2021"
   background:"#33333f"
@@ -12,8 +12,9 @@
 
 # “It's far better to buy a wonderful company at a fair price, than a fair company at a wonderful price.” - Warren Buffet
 
-For this analysis we will focus on the COVID-period US stock market using indexes from SP500, which experienced moderate level of fluctuation due to various reasons. In the following context we will provide visualizations for
-aspects of the markets and give the audience a sense of how to choose a industry of interest and target several companies.
+For this analysis we will focus on the COVID-period US stock market using indexes from SP500, which experienced moderate level of fluctuation due to various reasons. For example, during COVID period especially quarantine would causes people-relying industries (restaurants, shopping center) several losses, but as time goes they would develop their own ways to deal with the problems (such as deliveries). And the limitations COVID brought to people are somehow "beneficial" to the development of several industries, companies like Netflix and Amazon who mostly rely on online services would experience more customer usage than ever; and Bio-Medical companies like Moderna is also getting paid by people's hope of producing the vaccines.
+
+In the following context we will provide visualizations for aspects of the markets and give the audience a sense of how to choose a industry of interest and target several companies.
 
 ## Part 1: Market Health Overview
 
@@ -39,7 +40,7 @@ aspects of the markets and give the audience a sense of how to choose a industry
 
 ### Market Trendline 2020-2021
 
-![example](./static/images/trendline.png)
+[TableauEmbed link:"https://public.tableau.com/views/cse412final/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link" width:"120%" height:"600"/]
 
 (Make this visualization embedded from Tableau and the Map also!!!)
 
@@ -114,6 +115,8 @@ One of the documents to read prior to buying stocks will be the seasonal reports
 
 We picked 5 technology companies (Apple, Amazon, Netflix, Tesla, NVIDIA) to make a dataset, and compare their indexes within 1 year period! The reason we picked technology companies is that during COVID period, their operation are not likely to be negatively affected but possibly affected positively which follows our expectation to the stock market (economy) without the COVID - should be increasing overtime.
 
+In this section we will focus more on the background of the data instead of the numbers themselves. It is always important to think through the reasons behind the observations when investing, is the increment in profit by chance or causes by any events? Should we invest if anything similar happens again?
+
 
 ## Income Overview
 
@@ -125,26 +128,30 @@ We observed that every company has an increasing trend during the year of 2020 w
 
 [TableauEmbed link:"https://public.tableau.com/views/financials-book/Sheet7?:language=en-US&:display_count=n&:origin=viz_share_link" width:"100%" height:"600"/]
 
-Where now we can see that the spike of Amazon during 2020 season 3 is no more obvious, however the spike for apple still exist.
+Where now we can see that the spike of Amazon during 2020 season 3 is no more obvious, however the
 
+[Annotation annotation:"Compares to other companies during the same period that actually took no inspiring move, we actually expect apple to have this increment since they released their new iPhone, and it's always the same season each year, so some investors would buy the stock before the period and sell it once the price reaches their expectation.
+"]spike for apple[/Annotation]
 
-### Net Income to Total Assets
-
-When looking at the value of a company, the profitability and its assets are good measurements for its potential.
-
-Visualization here!
+still exist.
 
 
 ### Operating Expenses and Operating income
 
 During each season we can use the comparison between operational expenses and income to interpret any specific events happened to the company, or entire industry and market.
 
-Visualization here!
+[TableauEmbed link:"https://public.tableau.com/views/financials-book/Sheet8?:language=en-US&:display_count=n&:origin=viz_share_link" width:"100%" height:"600"/]
+
+Most companies have way more operating expenses than their operating income, so we will compare their trendline across seasons to understand more about the ratio. As we can see from the visualization that Netflix is the only company with a negative slope across the 5 seasons period, which its operational income is gradually increasing with the expenses decreasing.
+
+Which is explainable - comparing Netflix to other companies, it relies more on their merchandizes/selling their products instead of the operating things; where companies like Apple and Amazon, whos income are partly consist of their cloud service.
 
 
-### Revenue each season and same season different year comparison
+### Gross Profit each season and same season different year comparison
 
-Visualization here!
+Another important index when evaluating is the Gross Profit, which is the pre-tax revenue minus the cost of the production. Since the tax policy is different pre and post Biden, we will use the index to see the difference of income of the opening season for year 2020 and 2021.
+
+[TableauEmbed link:"https://public.tableau.com/views/financials-book/Sheet9?:language=en-US&:display_count=n&:origin=viz_share_link" width:"100%" height:"600"/]
 
 
 
@@ -153,6 +160,8 @@ Visualization here!
 Paragraph here to conclude our thoughts to the question, quotes are preferred to add at last.
 
 Cite sources at the very last!
+
+https://www.theguardian.com/technology/2021/jan/27/apple-profits-latest-quarter-surge-pandemic
 
 https://www.kaggle.com/paytonfisher/sp-500-companies-with-financial-information
 
