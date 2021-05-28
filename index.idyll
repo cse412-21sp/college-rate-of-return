@@ -10,7 +10,8 @@
   color:"#ffffff"
    /]
 
-# “It's far better to buy a wonderful company at a fair price, than a fair company at a wonderful price.” - Warren Buffet
+# “It's far better to buy a wonderful company at a fair price, than a fair company at a wonderful price.” 
+## - Warren Buffet
 
 For this analysis we will focus on the COVID-period US stock market using indexes from SP500, which experienced moderate level of fluctuation due to various reasons. For example, during COVID period especially quarantine would causes people-relying industries (restaurants, shopping center) several losses, but as time goes they would develop their own ways to deal with the problems (such as deliveries). And the limitations COVID brought to people are somehow "beneficial" to the development of several industries, companies like Netflix and Amazon who mostly rely on online services would experience more customer usage than ever; and Bio-Medical companies like Moderna is also getting paid by people's hope of producing the vaccines.
 
@@ -40,9 +41,9 @@ In the following context we will provide visualizations for aspects of the marke
 
 ### Market Trendline 2020-2021
 
+[FullWidth]
 [TableauEmbed link:"https://public.tableau.com/views/cse412final/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link" width:"120%" height:"600"/]
-
-(Make this visualization embedded from Tableau and the Map also!!!)
+[/FullWidth]
 
 This is a trendline telling the Open-Close and High-Low value of entire stock market (SP500 focused).
 
@@ -61,7 +62,9 @@ We either explain the variables here or after every visualizations.
 
 When investing, the price of the stock is very important which decides how many shares you could buy and determine your return rates:
 
+[FullWidth]
 [TableauEmbed link:"https://public.tableau.com/views/financials-book/Sheet2?:language=en&:display_count=y&publish=yes&:origin=viz_share_link" width:"120%" height:"600"/]
+[/FullWidth]
 
 Under most situation, the increase and decrease rate (be careful, it is the rate here not the amount) of stocks with similar properties are very close, which means with same amount of money, we buy less expensive stocks but gain more money in return per share; where for cheap stocks we hold great amount of shares but the earnings per share is also small.
 
@@ -74,7 +77,9 @@ And this is the reason why we need to read other indices of the stock to underst
 
 Usually, we would invest in companies that has considerable amount of Market Cap where those companies are less likely to go liquidation/bankrupt than ones having lower Market Capitalization.
 
-[TableauEmbed link:"https://public.tableau.com/views/financials-book/Sheet4?:language=en-US&:display_count=n&:origin=viz_share_link" width:"120%" height:"600"/]
+[FullWidth]
+[TableauEmbed className:`fullChart` link:"https://public.tableau.com/views/financials-book/Sheet4?:language=en-US&:display_count=n&:origin=viz_share_link" width:"120%" height:"600"/]
+[/FullWidth]
 
 When reading the **Price/Book** ratio, which is a company’s price per share divided by its book value, we compare the ratio within same sectors and in most cases: 1. Lower ratio indicates a undervalue stock price; 2. Higher ratio indicates a overestimated stock price.
 
@@ -83,18 +88,17 @@ And for the **Price/Sales** ratio, calculate as a company’s market cap divided
 
 ### Dividend to EPS
 
-Prior to understand the visualization of this part, we first need to learn the meanings of the variable. (Check the box once finish reading!)
+Prior to understand the visualization of this part, we first need to learn the meanings of the variable. 
+([span className:"checkbox-reminder"]Check the box once finish reading![/span])
 
 [var name:"divYield" value:false /]
 
 [Boolean value:divYield /]
-
 **Dividend Yields** [Display value:`divYield ? "get!" : "is a company's total annual dividend payments divided by its price per share, assuming the number of shares is constant. It is often expressed as a percentage. Dividend yield is used to calculate the earning on investment (shares) considering only the returns in the form of total dividends declared by the company during the year."  `/]
 
 [var name:"eps" value:false /]
 
 [Boolean value:eps /]
-
 **Earnings/Shares** [Display value:`eps ? "get!" : "Earnings per share (EPS) is calculated as a company's profit divided by the outstanding shares of its common stock. The resulting number serves as an indicator of a company's profitability."  `/]
 
 [Conditional if:`divYield && eps`]
@@ -128,11 +132,9 @@ We observed that every company has an increasing trend during the year of 2020 w
 
 [TableauEmbed link:"https://public.tableau.com/views/financials-book/Sheet7?:language=en-US&:display_count=n&:origin=viz_share_link" width:"100%" height:"600"/]
 
-Where now we can see that the spike of Amazon during 2020 season 3 is no more obvious, however the
-
-[Annotation annotation:"Compares to other companies during the same period that actually took no inspiring move, we actually expect apple to have this increment since they released their new iPhone, and it's always the same season each year, so some investors would buy the stock before the period and sell it once the price reaches their expectation.
-"]spike for apple[/Annotation]
-
+Where now we can see that the spike of Amazon during 2020 season 3 is no more obvious, however the 
+[span className:"appleSpike"][Annotation id:"KnPe6dZuwlg" annotation:"Compares to other companies during the same period that actually took no inspiring move, we actually expect apple to have this increment since they released their new iPhone, and it's always the same season each year, so some investors would buy the stock before the period and sell it once the price reaches their expectation.
+"]spike for apple[/Annotation][/span]
 still exist.
 
 
