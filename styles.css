@@ -38,3 +38,17 @@
     margin-left: 65vw;
   }
 }
+
+.idyll-checkbox {
+    margin: 0px 10px 0px 0px;
+}
+
+.fullWidth {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.fullWidth iframe {
+    width: 70%;
+}

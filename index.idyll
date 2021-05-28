@@ -60,7 +60,9 @@ We either explain the variables here or after every visualizations.
 
 When investing, the price of the stock is very important which decides how many shares you could buy and determine your return rates:
 
+[FullWidth]
 [TableauEmbed link:"https://public.tableau.com/views/financials-book/Sheet2?:language=en&:display_count=y&publish=yes&:origin=viz_share_link" width:"120%" height:"600"/]
+[/FullWidth]
 
 Under most situation, the increase and decrease rate (be careful, it is the rate here not the amount) of stocks with similar properties are very close, which means with same amount of money, we buy less expensive stocks but gain more money in return per share; where for cheap stocks we hold great amount of shares but the earnings per share is also small.
 
@@ -73,7 +75,9 @@ And this is the reason why we need to read other indices of the stock to underst
 
 Usually, we would invest in companies that has considerable amount of Market Cap where those companies are less likely to go liquidation/bankrupt than ones having lower Market Capitalization.
 
-[TableauEmbed link:"https://public.tableau.com/views/financials-book/Sheet4?:language=en-US&:display_count=n&:origin=viz_share_link" width:"120%" height:"600"/]
+[FullWidth]
+[TableauEmbed className:`fullChart` link:"https://public.tableau.com/views/financials-book/Sheet4?:language=en-US&:display_count=n&:origin=viz_share_link" width:"120%" height:"600"/]
+[/FullWidth]
 
 When reading the **Price/Book** ratio, which is a company’s price per share divided by its book value, we compare the ratio within same sectors and in most cases: 1. Lower ratio indicates a undervalue stock price; 2. Higher ratio indicates a overestimated stock price.
 
@@ -87,13 +91,11 @@ Prior to understand the visualization of this part, we first need to learn the m
 [var name:"divYield" value:false /]
 
 [Boolean value:divYield /]
-
 **Dividend Yields** [Display value:`divYield ? "get!" : "is a company's total annual dividend payments divided by its price per share, assuming the number of shares is constant. It is often expressed as a percentage. Dividend yield is used to calculate the earning on investment (shares) considering only the returns in the form of total dividends declared by the company during the year."  `/]
 
 [var name:"eps" value:false /]
 
 [Boolean value:eps /]
-
 **Earnings/Shares** [Display value:`eps ? "get!" : "Earnings per share (EPS) is calculated as a company's profit divided by the outstanding shares of its common stock. The resulting number serves as an indicator of a company's profitability."  `/]
 
 [Conditional if:`divYield && eps`]
