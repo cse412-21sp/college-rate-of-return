@@ -1316,6 +1316,10 @@ img {
   }
 }
 
+iframe {
+    margin: 15px 0px;
+}
+
 .idyll-checkbox {
     margin: 0px 10px 0px 0px;
 }
@@ -1328,4 +1332,29 @@ img {
 
 .fullWidth iframe {
     width: 70%;
+}
+
+.appleSpike .annotated-text {
+    background: #ffb347;
+    border-radius: 2px;
+}
+
+.appleSpike .annotation-text {
+    padding: 10px;
+    line-height: 1.3;
+}
+
+.checkbox-reminder{
+    text-decoration: underline;
+}
+
+.idyll-text-container h1:first-child {
+    text-shadow: 2px 2px 20px rgba(190,190,150,0.7);
+    margin-bottom: 0px;
+    font-style: italic;
+}
+
+#--warren-buffet {
+    text-align: right;
+    margin-top: 0px;
 }
