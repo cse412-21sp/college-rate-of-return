@@ -10,7 +10,7 @@
   color:"#ffffff"
    /]
 
-# “It's far better to buy a wonderful company at a fair price, than a fair company at a wonderful price.” 
+# “It's far better to buy a wonderful company at a fair price, than a fair company at a wonderful price.”
 ## - Warren Buffet
 
 For this analysis we will focus on the COVID-period US stock market using indexes from SP500, which experienced moderate level of fluctuation due to various reasons. For example, during COVID period especially quarantine would causes people-relying industries (restaurants, shopping center) several losses, but as time goes they would develop their own ways to deal with the problems (such as deliveries). And the limitations COVID brought to people are somehow "beneficial" to the development of several industries, companies like Netflix and Amazon who mostly rely on online services would experience more customer usage than ever; and Bio-Medical companies like Moderna is also getting paid by people's hope of producing the vaccines.
@@ -88,7 +88,7 @@ And for the **Price/Sales** ratio, calculate as a company’s market cap divided
 
 ### Dividend to EPS
 
-Prior to understand the visualization of this part, we first need to learn the meanings of the variable. 
+Prior to understand the visualization of this part, we first need to learn the meanings of the variable.
 ([span className:"checkbox-reminder"]Check the box once finish reading![/span])
 
 [var name:"divYield" value:false /]
@@ -132,7 +132,7 @@ We observed that every company has an increasing trend during the year of 2020 w
 
 [TableauEmbed link:"https://public.tableau.com/views/financials-book/Sheet7?:language=en-US&:display_count=n&:origin=viz_share_link" width:"100%" height:"600"/]
 
-Where now we can see that the spike of Amazon during 2020 season 3 is no more obvious, however the 
+Where now we can see that the spike of Amazon during 2020 season 3 is no more obvious, however the
 [span className:"appleSpike"][Annotation id:"KnPe6dZuwlg" annotation:"Compares to other companies during the same period that actually took no inspiring move, we actually expect apple to have this increment since they released their new iPhone, and it's always the same season each year, so some investors would buy the stock before the period and sell it once the price reaches their expectation.
 "]spike for apple[/Annotation][/span]
 still exist.
