@@ -22,7 +22,7 @@ In the following context we will provide visualizations for aspects of the marke
    [Scroller]
 
      [Graphic]
-       ![example](./static/images/map.png)
+       [TableauEmbed link:"https://public.tableau.com/views/SP500CompanyLocationsVisualization/Sheet1?:language=en-US&:display_count=n&:origin=viz_share_link" width:"120%" height:"600"/]
      [/Graphic]
 
      [Step]
@@ -159,14 +159,18 @@ Another important index when evaluating is the Gross Profit, which is the pre-ta
 
 ## Part 4: Conclusion
 
-Paragraph here to conclude our thoughts to the question, quotes are preferred to add at last.
+With all these variables we've looked at, we wish our audience now have a basic sense to determine whether a sector or one company is "wonderful" and at its "fair" price. If we just looked at the indexes we chose for picking the sectors and the companies, financial companies would be a good choice for investing. However, the content of stock market is way more complex than just looking at these indexes and variables. Although financial companies perform well in the PB and PS ratio and EPS with Dividend Yield index, they don't usually have a large enough market capitalization to compete with the technology companies. And many other variables are affecting the market such as what we've talked about and experiencing right now - the COVID-19, which is some social events. And the faith of people for the company should also takes into account, like last year's Tesla, and the vaccine companies Moderna and Pfizer. The stock market is complex and cannot be easily understood by knowing their current indexes (status of the company), we have to take into account the market health as a whole, the society also to help predict these companies performance.
 
-Cite sources at the very last!
+To help understand the project better, here is our explaining video:
+
+https://www.youtube.com/watch?v=iyKZe-TcgMw
+
+Remember to leave a Like after watching!
+
+***Source of data used:***
 
 https://www.theguardian.com/technology/2021/jan/27/apple-profits-latest-quarter-surge-pandemic
 
 https://www.kaggle.com/paytonfisher/sp-500-companies-with-financial-information
 
 https://www.macrotrends.net/
-
-And quotes sources!
